@@ -1,2 +1,2 @@
 # Android-AWS_Rekognition
-Using AWS_Rekognition service on Android
+Using AWS_Rekognition APIs on Android
