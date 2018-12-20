@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getCredential(){
         amazonRekognitionClient = new AmazonRekognitionClient(new AWSCredentialProvider());
-        amazonRekognitionClient.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1));
+        amazonRekognitionClient.setRegion(Region.getRegion(Regions.AP_NORTHEAST_1));    //Put Your AWS Region here
     }
 
     public String ListCollections(){
