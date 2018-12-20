@@ -101,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
                 .withImage(image);
         SearchFacesByImageResult response = amazonRekognitionClient.searchFacesByImage(request);
 
-    
         try {
             JSONObject responseObject = new JSONObject(response.toString());
             ExternalID = "";
@@ -112,21 +111,16 @@ public class MainActivity extends AppCompatActivity {
                 String similarity = faceMatches.getString("Similarity");
                 String externalImageId = faceMatches.getJSONObject("Face").getString("ExternalImageId");
                 String confidence = faceMatches.getJSONObject("Face").getString("Confidence");
-                Log.e("0","similarity"+similarity);
-                Log.e("0","externalImageId"+externalImageId);
-                Log.e("0","confidence"+confidence);
+                Log.e("","similarity"+similarity);
+                Log.e("","externalImageId"+externalImageId);
+                Log.e("","confidence"+confidence);
                 ExternalID = ExternalID+externalImageId+" ";
             }
-
-
         } catch (JSONException e) {
             Log.e("", "unexpected JSON exception: ", e);
         }
-
-
         return "ExternalID: "+ExternalID+ " response: "+response;
     }
-
 
     private class AsyncTaskRunner extends AsyncTask<Void, Void, String> {
         @Override
