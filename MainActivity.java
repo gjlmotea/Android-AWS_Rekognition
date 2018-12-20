@@ -25,10 +25,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     AmazonRekognitionClient amazonRekognitionClient;
-    int image_index = R.drawable.old;
+    int image_index = R.drawable.your_Image;
     Image image = new Image();
-    String CollectionID = "";
-    String ExternalID = "";
+    String CollectionID = "your_AWS_CollectionID";
+    String ExternalID = "your_Image_ExternalID";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
