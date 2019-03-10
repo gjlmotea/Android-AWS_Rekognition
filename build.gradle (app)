@@ -20,6 +20,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //https://aws.amazon.com/tw/rekognition/resources/
+    //下載Android軟體開發套件，點擊"安裝"下載aws-android-sdk-xxxxx.zip
+    //解壓縮後把資料夾名稱改名為libs，放到 C:\Users\gp6vu86\AndroidStudioProjects\你的專案\app 底下
+    //這樣一來，第22行就能讓AndroidStudio找到資料夾裡的函式庫了
+    
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
